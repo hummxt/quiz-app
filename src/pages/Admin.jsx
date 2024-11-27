@@ -4,7 +4,7 @@ import React from 'react'
 const Admin = () => {
   return (
     <div>
-      burani duzeldecem
+      burani duzeldecem qoy qalsin
     </div>
   )
 }
