@@ -28,7 +28,7 @@ const Login = () => {
               type="text"
               placeholder="Enter username"
               id="username"
-              className="mb-4 p-2 rounded-md transform hover:-translate-y-1 transition duration-400 outline-none text-black"
+              className="mb-4 p-2 rounded-md text-lg transform hover:-translate-y-1 transition duration-400 outline-none text-black"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
@@ -37,7 +37,7 @@ const Login = () => {
               type="password"
               placeholder="Enter password"
               id="password"
-              className="mb-10 p-2 rounded-md transform hover:-translate-y-1 transition duration-400 outline-none text-black"
+              className="mb-10 p-2 rounded-md text-lg transform hover:-translate-y-1 transition duration-400 outline-none text-black"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required

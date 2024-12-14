@@ -2,106 +2,106 @@
   [
     {
       "id": "1",
-      "question": "React komponentinin yenidən render edilməsinə nə səbəb ola bilər?",
+      "question": "What can cause a React component to re-render?",
       "options": [
-        "Komponentin daxilindəki funksiyalar",
-        "CSS dəyişiklikləri",
-        "Komponentin adı dəyişməsi",
-        "Props və ya state dəyişməsi"
+        "Functions inside the component",
+        "CSS changes",
+        "Changing the component name",
+        "Props or state changes"
       ],
-      "answer": "Props və ya state dəyişməsi"
+      "answer": "Props or state changes"
     },
     {
       "id": "2",
-      "question": "Reactda API-larin əsas çatışmazlığı nədir?",
+      "question": "What is the main limitation of APIs in React?",
       "options": [
-        "State menecmentini tamamilə əvəz edə bilməməsi",
-        "Bilmirem",
-        "Async məlumatları idarə edə bilməməsi",
-        "Həddindən artıq render etmə problemi"
+        "Not fully replacing state management",
+        "I don't know",
+        "Inability to handle async data",
+        "Excessive rendering issues"
       ],
-      "answer": "Həddindən artıq render etmə problemi"
+      "answer": "Excessive rendering issues"
     },
     {
       "id": "3",
-      "question": "`useEffect` hook-u səhvən sonsuz dövrəyə necə səbəb ola bilər?",
+      "question": "How can the `useEffect` hook accidentally cause an infinite loop?",
       "options": [
-        "Asılılıqlar siyahısında olmayan dəyişən istifadə etdikdə",
-        "Funksiyanı return etdikdə",
-        "State dəyişiklikləri ilə əlaqəli olmamaq",
-        "Yalnız bir dəfə çağırmaq üçün boş massiv verildikdə"
+        "Using a variable not in the dependency list",
+        "Returning a function",
+        "Not related to state changes",
+        "Providing an empty array to run only once"
       ],
-      "answer": "Asılılıqlar siyahısında olmayan dəyişən istifadə etdikdə"
+      "answer": "Using a variable not in the dependency list"
     },
     {
       "id": "4",
-      "question": "React-də virtual DOM-un əsas üstünlüyü nədir?",
+      "question": "What is the main advantage of the virtual DOM in React?",
       "options": [
-        "Həddindən artıq render etməyi azaltmaq",
-        "State menecmentini asanlaşdırmaq",
-        "Komponentləri avtomatik olaraq silmək",
-        "Performansı artırmaq"
+        "Reducing excessive rendering",
+        "Simplifying state management",
+        "Automatically removing components",
+        "Improving performance"
       ],
-      "answer": "Performansı artırmaq"
+      "answer": "Improving performance"
     },
     {
       "id": "5",
-      "question": "React-də `key` atributu nə üçün vacibdir?",
+      "question": "Why is the `key` attribute important in React?",
       "options": [
-        "Style atributlarını dəyişmək",
-        "Event handlerları təyin etmək",
-        "Komponentin növünü dəyişdirmək",
-        "Render performansını artırmaq"
+        "To modify style attributes",
+        "To assign event handlers",
+        "To change the component type",
+        "To improve rendering performance"
       ],
-      "answer": "Render performansını artırmaq"
+      "answer": "To improve rendering performance"
     },
     {
       "id": "6",
-      "question": "JavaScript-də 'closure' nədir?",
+      "question": "What is a 'closure' in JavaScript?",
       "options": [
-        "Bir funksiyanın daxilindəki başqa bir funksiyanın xarici dəyişənlərə çıxışı",
-        "Promise obyektləri yaratmaq üçün istifadə olunan konsept",
-        "Asinxron əməliyyatları idarə edən bir metod",
-        "DOM manipulyasiyası üçün istifadə olunan metod"
+        "Access to external variables by a function inside another function",
+        "A concept used to create Promise objects",
+        "A method to handle asynchronous operations",
+        "A method for DOM manipulation"
       ],
-      "answer": "Bir funksiyanın daxilindəki başqa bir funksiyanın xarici dəyişənlərə çıxışı"
+      "answer": "Access to external variables by a function inside another function"
     },
     {
       "id": "7",
-      "question": "`React.StrictMode` hansı məqsəd üçün istifadə olunur?",
+      "question": "What is the purpose of `React.StrictMode`?",
       "options": [
-        "Yeni xüsusiyyətləri sınaqdan keçirmək üçün",
-        "Performans analizini avtomatik həyata keçirmək üçün",
-        "React tətbiqini tərtib etməyə imkan vermək üçün",
-        "Tətbiqdəki potensial problemləri aşkar etmək üçün"
+        "To test new features",
+        "To automate performance analysis",
+        "To allow React app compilation",
+        "To detect potential issues in the app"
       ],
-      "answer": "Tətbiqdəki potensial problemləri aşkar etmək üçün"
+      "answer": "To detect potential issues in the app"
     },
     {
       "id": "8",
-      "question": "`useRef` React hook-u nə edir?",
+      "question": "What does the `useRef` React hook do?",
       "options": [
-        "State idarə etməyi asanlaşdırır",
-        "DOM elementinə və ya bir dəyişənə birbaşa istinad saxlamağa imkan verir",
-        "Async məlumatları yükləyir",
-        "Componenti yenidən render etmək üçün istifadə olunur"
+        "Simplifies state management",
+        "Allows direct reference to a DOM element or a variable",
+        "Loads async data",
+        "Used to re-render the component"
       ],
-      "answer": "DOM elementinə və ya bir dəyişənə birbaşa istinad saxlamağa imkan verir"
+      "answer": "Allows direct reference to a DOM element or a variable"
     },
     {
       "id": "9",
-      "question": "React-də fragmentlər hansı məqsəd üçün istifadə olunur?",
+      "question": "What are fragments used for in React?",
       "options": [
-        "State idarə etməyi asanlaşdırmaq üçün",
-        "DOM-a əlavə edilməyən konteynerlər yaratmaq üçün",
-        "Bir DOM elementini gizlətmək üçün",
-        "Komponentin performansını artırmaq üçün"
+        "To simplify state management",
+        "To create containers not added to the DOM",
+        "To hide a DOM element",
+        "To improve component performance"
       ],
-      "answer": "DOM-a əlavə edilməyən konteynerlər yaratmaq üçün"
+      "answer": "To create containers not added to the DOM"
     },
     {
       "id": "10",
-      "question": "JavaScript-də dəyişənləri necə təyin edirik?",
+      "question": "How are variables declared in JavaScript?",
       "options": [
         "let, def, var",
         "var, let, const",
@@ -112,7 +112,7 @@
     },
     {
       "id": "11",
-      "question": "JavaScript-də hansı operatorlarla müqayisə edilir?",
+      "question": "Which operators are used for comparison in JavaScript?",
       "options": [
         "==, ===, !==, <, >",
         "=, ==, ||, &&",
@@ -123,7 +123,7 @@
     },
     {
       "id": "12",
-      "question": "JavaScript-də hansı növ dəyişənlər var?",
+      "question": "What are the data types in JavaScript?",
       "options": [
         "String, Boolean, Object, Undefined",
         "Object, Array, Null, String, Set",
@@ -134,7 +134,7 @@
     },
     {
       "id": "13",
-      "question": "JavaScript-də array (massiv) necə yaradılır?",
+      "question": "How is an array created in JavaScript?",
       "options": [
         "let arr = {1, 2, 3}",
         "let arr = (1, 2, 3)",
@@ -145,190 +145,190 @@
     },
     {
       "id": "14",
-      "question": "React Router-də yönləndirmə necə həyata keçirilir?",
+      "question": "How is routing performed in React Router?",
       "options": [
-        "<Route> və <Link> komponentləri ilə",
-        "<Route> və <Redirect> komponentləri ilə",
-        "<Router> və <Navigate> komponentləri ilə",
-        "Yalnız <Route> komponenti ilə"
+        "With <Route> and <Link> components",
+        "With <Route> and <Redirect> components",
+        "With <Router> and <Navigate> components",
+        "With only the <Route> component"
       ],
-      "answer": "<Route> və <Link> komponentləri ilə"
+      "answer": "With <Route> and <Link> components"
     },
     {
       "id": "15",
-      "question": "React-da `useState` hook-u nə edir?",
+      "question": "What does the `useState` hook do in React?",
       "options": [
-        "Komponenti render edir",
-        "Dəyər təyin etmək üçün istifadə olunur.",
-        "State dəyişikliklərini gözləyir",
-        "Komponentin içindəki funksiyanı çağırır"
+        "Creates and manages state in a functional component",
+        "Renders a component",
+        "Waits for state changes",
+        "Calls a function inside the component"
       ],
-      "answer": "Dəyər təyin etmək üçün istifadə olunur."
+      "answer": "Creates and manages state in a functional component"
     },
     {
       "id": "16",
-      "question": "React-də `className` nə üçün istifadə olunur?",
+      "question": "What is the `className` attribute used for in React?",
       "options": [
-        "Yalnız CSS tətbiq etmək üçün",
-        "CSS sinifləri təyin etmək üçün",
-        "Komponentin adını dəyişmək üçün",
-        "DOM elementinin id-ni təyin etmək üçün"
+        "To apply CSS only",
+        "To define CSS classes",
+        "To change the component name",
+        "To set the id of a DOM element"
       ],
-      "answer": "CSS sinifləri təyin etmək üçün"
+      "answer": "To define CSS classes"
     },
     {
       "id": "17",
-      "question": "JavaScript-də `const` ilə təyin edilən dəyişənin dəyəri dəyişdirilə bilərmi?",
+      "question": "Can the value of a `const` variable in JavaScript be changed?",
       "options": [
-        "Bəli, amma yalnız obyektlər üçün",
-        "Xeyr, dəyişdirilə bilməz",
-        "Bəli, istənilən zaman",
-        "Bəli, amma yalnız bir dəfə"
+        "Yes, but only for objects",
+        "No, it cannot be changed",
+        "Yes, at any time",
+        "Yes, but only once"
       ],
-      "answer": "Xeyr, dəyişdirilə bilməz"
+      "answer": "No, it cannot be changed"
     },
     {
       "id": "18",
-      "question": "JavaScript-də `typeof` operatoru nə üçün istifadə olunur?",
+      "question": "What is the `typeof` operator used for in JavaScript?",
       "options": [
-        "Dəyişənin növünü müqayisə edir",
-        "hec ele bele",
-        "Dəyişənin tipi haqqında məlumat verir",
-        "Dəyişəni rəqəmə çevirir"
+        "Compares the type of a variable",
+        "Just for fun",
+        "Gives information about the type of a variable",
+        "Converts a variable to a number"
       ],
-      "answer": "Dəyişənin tipi haqqında məlumat verir"
+      "answer": "Gives information about the type of a variable"
     },
     {
       "id": "19",
-      "question": "JavaScript-də `NaN` nəyi bildirir?",
+      "question": "What does `NaN` represent in JavaScript?",
       "options": [
-        "Təyin edilməmiş dəyəri",
-        "Qeyri-rəqəmli dəyəri",
-        "Əksinə, sayı",
-        "Dəyişənin tipi"
+        "An undefined value",
+        "A non-numeric value",
+        "The opposite of a number",
+        "The type of a variable"
       ],
-      "answer": "Qeyri-rəqəmli dəyəri"
+      "answer": "A non-numeric value"
     },
     {
       "id": "20",
-      "question": "JavaScript-də `null` və `undefined` arasındakı fərq nədir?",
+      "question": "What is the difference between `null` and `undefined` in JavaScript?",
       "options": [
-        "`null` boştur, `undefined` isə nömrədir",
-        "`null` obyektə bərabərdir, `undefined` isə funksiya tipidir",
-        "`null` dəyişənin heç bir dəyəri olmadığını bildirir, `undefined` isə dəyişənin təyin edilmədiyini göstərir",
-        "`null` funksiyadır, `undefined` isə array-dir"
+        "`null` is empty, while `undefined` is a number",
+        "`null` is equivalent to an object, while `undefined` is a function type",
+        "`null` indicates no value, while `undefined` indicates a variable is not defined",
+        "`null` is a function, while `undefined` is an array"
       ],
-      "answer": "`null` dəyişənin heç bir dəyəri olmadığını bildirir, `undefined` isə dəyişənin təyin edilmədiyini göstərir"
+      "answer": "`null` indicates no value, while `undefined` indicates a variable is not defined"
     },
     {
       "id": "21",
-      "question": "JavaScript-də `JSON.stringify()` metodu nə edir?",
+      "question": "What does the `JSON.stringify()` method do in JavaScript?",
       "options": [
-        "Bir JSON obyektini JavaScript obyektinə çevirir",
-        "Bir JSON obyektini string formatına çevirir",
-        "Bir string-i JSON formatına çevirir",
-        "Bir JSON obyektini parse edir"
+        "Converts a JSON object to a JavaScript object",
+        "Converts a JSON object to string format",
+        "Converts a string to JSON format",
+        "Parses a JSON object"
       ],
-      "answer": "Bir JSON obyektini string formatına çevirir"
+      "answer": "Converts a JSON object to string format"
     },
     {
       "id": "22",
-      "question": "React-da komponentlər arasındakı məlumat mübadiləsi necə həyata keçirilir?",
+      "question": "How is data exchanged between components in React?",
       "options": [
-        "Props ilə",
-        "State ilə",
-        "Refs ilə",
-        "Context API ilə"
+        "With props",
+        "With state",
+        "With refs",
+        "With the Context API"
       ],
-      "answer": "Props ilə"
+      "answer": "With props"
     },
     {
       "id": "23",
-      "question": "React-da state nə üçün istifadə olunur?",
+      "question": "What is state used for in React?",
       "options": [
-        "Komponentin daxili məlumatını saxlamaq üçün",
-        "State komponentlər arasında mübadilə etmək üçün",
-        "Render nəticələrini hesablamaq üçün",
-        "Komponenti yenidən render etmək üçün"
+        "To store a component's internal data",
+        "To exchange state between components",
+        "To calculate rendering results",
+        "To re-render a component"
       ],
-      "answer": "Komponentin daxili məlumatını saxlamaq üçün"
+      "answer": "To store a component's internal data"
     },
     {
       "id": "24",
-      "question": "React-də `setState()` metodu nə üçün istifadə olunur?",
+      "question": "What is the `setState()` method used for in React?",
       "options": [
-        "State dəyərini yeniləmək üçün",
-        "Komponenti yenidən render etmək üçün",
-        "State məlumatını oxumaq üçün",
-        "Komponenti gizlətmək üçün"
+        "To update the state value",
+        "To re-render a component",
+        "To read state data",
+        "To hide a component"
       ],
-      "answer": "State dəyərini yeniləmək üçün"
+      "answer": "To update the state value"
     },
     {
       "id": "25",
-      "question": "React-da HOC (Higher Order Component) nədir?",
+      "question": "What is a Higher-Order Component (HOC) in React?",
       "options": [
-        "Yeni bir komponenti təyin etmək",
-        "Props-u dəyişmək",
-        "Bir komponenti başqa bir komponentlə bürümək",
-        "State dəyərlərini saxlamaq"
+        "To define a new component",
+        "To modify props",
+        "To wrap a component with another component",
+        "To store state values"
       ],
-      "answer": "Bir komponenti başqa bir komponentlə bürümək"
+      "answer": "To wrap a component with another component"
     },
     {
       "id": "26",
-      "question": "JavaScript-də `async` və `await` nə edir?",
+      "question": "What do `async` and `await` do in JavaScript?",
       "options": [
-        "Asinxron funksiyalar yaratmaq və gözləmək",
-        "Kod bloklarını paralel işlətmək",
-        "Əməliyyatları sinxron şəkildə aparmaq",
-        "Məlumatları dərhal əldə etmək"
+        "Create and wait for asynchronous functions",
+        "Run code blocks in parallel",
+        "Execute operations synchronously",
+        "Retrieve data immediately"
       ],
-      "answer": "Asinxron funksiyalar yaratmaq və gözləmək"
+      "answer": "Create and wait for asynchronous functions"
     },
     {
       "id": "27",
-      "question": "JavaScript-də `fetch()` metodu nə üçün istifadə olunur?",
+      "question": "What is the `fetch()` method used for in JavaScript?",
       "options": [
-        "Məlumatı lokal yaddaşdan əldə etmək",
-        "Asinxron əməliyyatlar üçün istifadə olunur",
-        "Məlumatları serverə göndərmək üçün",
-        "Verilənləri parse etmək üçün"
+        "To retrieve data from local storage",
+        "To handle asynchronous operations",
+        "To send data to a server",
+        "To parse data"
       ],
-      "answer": "Asinxron əməliyyatlar üçün istifadə olunur"
+      "answer": "To handle asynchronous operations"
     },
     {
       "id": "28",
-      "question": "React-də `useEffect` hook-u nə üçün istifadə olunur?",
+      "question": "What is the `useEffect` hook used for in React?",
       "options": [
-        "Komponenti render etmək üçün",
-        "Async əməliyyatları idarə etmək üçün",
-        "State dəyişikliklərini izləmək üçün",
-        "DOM manipulasiya etmək üçün"
+        "To render a component",
+        "To manage async operations",
+        "To track state changes",
+        "To manipulate the DOM"
       ],
-      "answer": "Async əməliyyatları idarə etmək üçün"
+      "answer": "To manage async operations"
     },
     {
       "id": "29",
-      "question": "JavaScript-də `this` nəyi təmsil edir?",
+      "question": "What does `this` represent in JavaScript?",
       "options": [
-        "Bu anki funksiyanın kontekstini",
-        "Bu anki obyektin özünü",
-        "Yalnız global dəyişəni",
-        "Function prototipini"
+        "The context of the current function",
+        "The current object itself",
+        "Only a global variable",
+        "The function prototype"
       ],
-      "answer": "Bu anki obyektin özünü"
+      "answer": "The current object itself"
     },
     {
       "id": "30",
-      "question": "JavaScript-də `Array.map()` metodu nə edir?",
+      "question": "What does the `Array.map()` method do in JavaScript?",
       "options": [
-        "Array-dəki hər bir elementi dəyişir",
-        "Array-ni sıralayır",
-        "Array-dəki elementləri filtrləyir",
-        "Array-dəki elementləri dövr edir"
+        "Modifies each element in an array",
+        "Sorts an array",
+        "Filters elements in an array",
+        "Iterates over array elements"
       ],
-      "answer": "Array-dəki hər bir elementi dəyişir"
+      "answer": "Modifies each element in an array"
     }
   ]
 ]

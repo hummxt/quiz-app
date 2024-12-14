@@ -5,13 +5,13 @@ const Result = ({ score, totalQuestions }) => {
         const percentage = (score / totalQuestions) * 100;
 
         if (percentage >= 90) {
-            return "Əla!";
+            return "Perfect!";
         } else if (percentage >= 70) {
-            return "Yaxşı";
+            return "Good";
         } else if (percentage >= 50) {
-            return "Pis deyil";
+            return "Not bad";
         } else {
-            return "Canın sağ olsun";
+            return "U r so bad.";
         }
     }
 
@@ -20,11 +20,11 @@ const Result = ({ score, totalQuestions }) => {
         return (
             <>
                 <div className="score-container text-[rgb(33,33,33)] text-center flex items-center justify-center flex-col gap-10 mb-10">
-                    <h1 className="text-2xl font-semibold">Quiz bitdi !</h1>
+                    <h1 className="text-2xl font-semibold">Quiz finished!</h1>
                     <p className="text-xl font-medium">
-                        Doğru cavab sayısı : {score} / {totalQuestions}
+                        Correct answers : {score} / {totalQuestions}
                     </p>
-                    <p className="text-xl font-medium">Nəticə : {grade}</p>
+                    <p className="text-xl font-medium">Result : {grade}</p>
                 </div>
             </>
         );

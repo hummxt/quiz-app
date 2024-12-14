@@ -13,60 +13,60 @@ const Exam = () => {
   const [isQuizCompleted, setIsQuizCompleted] = useState(false);
   const questionsJSON = "http://localhost:3000/0";
 
-  useEffect(() => {
-    const preventRightClick = (e) => {
-      e.preventDefault();
-    };
+  // useEffect(() => {
+  //   const preventRightClick = (e) => {
+  //     e.preventDefault();
+  //   };
 
-    document.addEventListener("contextmenu", preventRightClick);
+  //   document.addEventListener("contextmenu", preventRightClick);
 
-    return () => {
-      document.removeEventListener("contextmenu", preventRightClick);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("contextmenu", preventRightClick);
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    const handleKeyPress = (e) => {
-      if (e.key === 'F12') {
-        e.preventDefault();
-      }
-    };
+  // useEffect(() => {
+  //   const handleKeyPress = (e) => {
+  //     if (e.key === 'F12') {
+  //       e.preventDefault();
+  //     }
+  //   };
 
-    window.addEventListener('keydown', handleKeyPress);
+  //   window.addEventListener('keydown', handleKeyPress);
 
-    return () => {
-      window.removeEventListener('keydown', handleKeyPress);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('keydown', handleKeyPress);
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    const checkDevTools = () => {
-      const width = window.innerWidth;
-      const height = window.innerHeight;
+  // useEffect(() => {
+  //   const checkDevTools = () => {
+  //     const width = window.innerWidth;
+  //     const height = window.innerHeight;
 
-      if (width <= 800 && height <= 600) {
-        alert('Developer tools are disabled.');
-      }
-    };
+  //     if (width <= 800 && height <= 600) {
+  //       alert('Developer tools are disabled.');
+  //     }
+  //   };
 
-    const interval = setInterval(checkDevTools, 1000);
+  //   const interval = setInterval(checkDevTools, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
-  if (typeof console !== "undefined") {
-    console.log = function () {};
-    console.warn = function () {};
-    console.error = function () {};
-    console.info = function () {};
-  }
+  // if (typeof console !== "undefined") {
+  //   console.log = function () {};
+  //   console.warn = function () {};
+  //   console.error = function () {};
+  //   console.info = function () {};
+  // }
   
   useEffect(() => {
     axios(questionsJSON)
       .then((response) => {
         setQuestions(response.data);
       })
-      .catch((error) => console.error("Xeta var qardas:", error));
+      .catch((error) => console.error("You have error brother:", error));
   }, []);
 
   const selectAnswer = (index) => {
@@ -91,7 +91,7 @@ const Exam = () => {
     }
   };
 
-  const notify = () => toast("Sualı cavablayın.");
+  const notify = () => toast("Answer the question.");
 
   return (
     <main className="max-w-full max-h-screen flex items-center justify-center bg-white">
@@ -122,14 +122,14 @@ const Exam = () => {
                   ))}
                 </div>
                 <div
-                  className="next w-[360px] p-3 rounded-lg text-white bg-cyan-600  flex items-center justify-center mt-5 text-lg cursor-pointer"
+                  className="next w-[480px] p-3 rounded-lg text-white bg-cyan-600  flex items-center justify-center mt-5 text-lg cursor-pointer"
                   onClick={handleNextQuestion}
                 >
                   Next
                 </div>
               </>
             ) : (
-              <p className="text-white text-2xl">JSON-Server aktiv edin.</p>
+              <p className="text-white text-2xl">If you see this text, activate the JSON server <br /> Write the code to terminal : json-server --watch questions.json.</p>
             )
           ) : (
             <Result score={score} totalQuestions={questions.length} />
