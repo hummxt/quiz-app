@@ -63,7 +63,7 @@ const Admin = () => {
           <h1 className="text-2xl">Admin Panel</h1>
           <p className="text-xl">You can add and delete questions by using this panel.</p>
         </div>
-        <div className="add-question w-[480px] h-[530px] flex items-center justify-center bg-[rgb(66,66,66)] text-white text-lg rounded-lg  mt-10">
+        <div className="add-question w-[360px] h-[500px] md:w-[480px] md:h-[530px] flex items-center justify-center bg-[rgb(66,66,66)] text-white text-lg rounded-lg  mt-10">
           <form className="flex items-center justify-center flex-col gap-6" onSubmit={handleSubmit}>
             <div className="question mb-12 mt-4 flex items-center justify-center flex-col gap-4">
               <h1 className="text-xl font-medium">Add the question</h1>
@@ -121,7 +121,7 @@ const Admin = () => {
         <div className="delete flex items-center justify-center flex-col gap-12">
           <h1 className="text-2xl">Deleting questions</h1>
           <div className="questions flex items-center justify-center gap-10">
-            <div className="del-question grid grid-cols-4 items-center justify-center gap-12">
+            <div className="del-question grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-4 items-center justify-center gap-12">
               {fetchQuestions.map((questionsss) => {
                 return (
                   <div key={questionsss.id} className="quest bg-[rgb(66,66,66)] w-80 h-[480px] rounded-lg flex items-center justify-center m-auto flex-col gap-6">

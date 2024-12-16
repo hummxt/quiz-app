@@ -12,7 +12,7 @@ const Login = () => {
   function loginValidation(e) {
     e.preventDefault();
     if (username === validUsername && password === validPassword) {
-      navigate("/admin");
+      navigate("/admin$$$");
     } else {
       alert("Wrong Password");
     }
@@ -20,7 +20,7 @@ const Login = () => {
 
   return (
     <div className="container flex items-center justify-center flex-col h-[720px] min-w-full">
-      <div className="login w-[400px] h-[450px] bg-[rgb(44,44,44)] flex items-center justify-center flex-col text-white rounded-lg">
+      <div className="login w-[340px] md:w-[400px] h-[400px] md:h-[450px] bg-[rgb(44,44,44)] flex items-center justify-center flex-col text-white rounded-lg">
         <h1 className="mb-16 text-2xl font-medium">Login by Admin</h1>
         <form onSubmit={loginValidation}>
           <div className="login-container flex items-center justify-center flex-col">

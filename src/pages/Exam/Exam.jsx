@@ -60,7 +60,7 @@ const Exam = () => {
   //   console.error = function () {};
   //   console.info = function () {};
   // }
-  
+
   useEffect(() => {
     axios(questionsJSON)
       .then((response) => {
@@ -94,24 +94,36 @@ const Exam = () => {
   const notify = () => toast("Answer the question.");
 
   return (
-    <main className="max-w-full max-h-screen flex items-center justify-center bg-white">
-      <div className="max-w-full h-[90.2vh] flex items-center justify-center flex-col">
+    <main className="max-w-full h-full flex items-center justify-center bg-white">
+      <div className="w-full h-[90.2vh] flex items-center justify-center flex-col">
         <div>
-          <ToastContainer className="toastify" progressClassName="toast-progress-blue" />
+          <ToastContainer
+            className="toastify"
+            progressClassName="toast-progress-blue"
+            position="top-left"
+            style={{
+              fontSize: "12px",
+              padding: "10px",
+              width: "200px",
+              height: "20px",
+            }}
+          />
         </div>
-        <div className="question w-[100%] h-[450px] flex items-center justify-center flex-col gap-6 mb-5">
+        <div className="question w-full flex items-center justify-center flex-col gap-6 mb-5 px-4">
           {!isQuizCompleted ? (
             questions.length > 0 ? (
               <>
-                <div className="question-container w-[480px] h-[400px] flex items-center justify-center bg-[rgb(66,66,66)] text-white text-lg rounded-lg p-4">
-                  <h1 className="font-semibold">{questions[currentQuestionIndex].question}</h1>
+                {/* Question Container */}
+                <div className="question-container w-full max-w-[480px] sm:w-[90%] sm:h-[350px] md:max-w-[480px] md:max-h-[140px] sm:max-h-[140px] flex items-center justify-center bg-[rgb(66,66,66)] text-white text-lg rounded-lg p-4">
+                  <h1 className="font-semibold text-center">{questions[currentQuestionIndex].question}</h1>
                 </div>
-                <div className="answers flex items-center justify-center flex-col gap-5 text-black">
+                {/* Answers */}
+                <div className="answers flex items-center justify-center flex-col gap-5 text-black w-full">
                   {questions[currentQuestionIndex].options.map((answer, index) => (
                     <div
                       key={index}
-                      className={`answer-container w-[480px] flex items-center p-4 rounded-sm border-2
-        ${selectedAnswer === index
+                      className={`answer-container w-full max-w-[480px] flex items-center p-4 rounded-sm border-2
+                  ${selectedAnswer === index
                           ? "bg-cyan-600 border-cyan-600 text-white"
                           : "bg-white border-[rgb(66,66,66)] text-black"
                         } cursor-pointer transition-all duration-300`}
@@ -121,15 +133,18 @@ const Exam = () => {
                     </div>
                   ))}
                 </div>
+                {/* Next Button */}
                 <div
-                  className="next w-[480px] p-3 rounded-lg text-white bg-cyan-600  flex items-center justify-center mt-5 text-lg cursor-pointer"
+                  className="next w-full max-w-[480px] p-3 rounded-lg text-white bg-cyan-600 flex items-center justify-center mt-5 text-lg cursor-pointer sm:w-[90%] md:max-w-[480px]"
                   onClick={handleNextQuestion}
                 >
                   Next
                 </div>
               </>
             ) : (
-              <p className="text-white text-2xl">If you see this text, activate the JSON server <br /> Write the code to terminal : json-server --watch questions.json.</p>
+              <p className="text-white text-2xl text-center">
+                If you see this text, activate the JSON server <br /> Write the code to terminal: json-server --watch questions.json.
+              </p>
             )
           ) : (
             <Result score={score} totalQuestions={questions.length} />
@@ -137,6 +152,7 @@ const Exam = () => {
         </div>
       </div>
     </main>
+
   );
 };
 
