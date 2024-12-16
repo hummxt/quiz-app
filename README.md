@@ -1,7 +1,7 @@
 # Quiz App
 
 ## Description
-Simple Quiz App that allows to take a quiz with 
+Simple Quiz App that allows to take a quiz with your specific questions that you added.
 
 ## Techlonogies used
 - React JS
