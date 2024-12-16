@@ -1,8 +1,20 @@
-# React + Vite
+# Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+Simple Quiz App that allows to take a quiz with your specific questions that you added.
 
-Currently, two official plugins are available:
+## Techlonogies used
+- React JS
+- Tailwind CSS
+- JSON-Server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Admin Panel** - you can add your questions and delete it.
+- **Responsive design** for mobile and desktop views.
+- **Finish Screen** the app shows the total score.
+
+## 1. Clone the repository:
+- git clone https://github.com/hummxt/quiz-app.
+- Open folder and write this command to the terminal "**npm run dev**".
+- Write this code too for the activating mock API server "**json-server --watch questions.json**".
+- If you want the use admin panel the username and password is "admin".
