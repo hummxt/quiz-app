@@ -13,53 +13,6 @@ const Exam = () => {
   const [isQuizCompleted, setIsQuizCompleted] = useState(false);
   const questionsJSON = "http://localhost:3000/0";
 
-  // useEffect(() => {
-  //   const preventRightClick = (e) => {
-  //     e.preventDefault();
-  //   };
-
-  //   document.addEventListener("contextmenu", preventRightClick);
-
-  //   return () => {
-  //     document.removeEventListener("contextmenu", preventRightClick);
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   const handleKeyPress = (e) => {
-  //     if (e.key === 'F12') {
-  //       e.preventDefault();
-  //     }
-  //   };
-
-  //   window.addEventListener('keydown', handleKeyPress);
-
-  //   return () => {
-  //     window.removeEventListener('keydown', handleKeyPress);
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   const checkDevTools = () => {
-  //     const width = window.innerWidth;
-  //     const height = window.innerHeight;
-
-  //     if (width <= 800 && height <= 600) {
-  //       alert('Developer tools are disabled.');
-  //     }
-  //   };
-
-  //   const interval = setInterval(checkDevTools, 1000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
-  // if (typeof console !== "undefined") {
-  //   console.log = function () {};
-  //   console.warn = function () {};
-  //   console.error = function () {};
-  //   console.info = function () {};
-  // }
 
   useEffect(() => {
     axios(questionsJSON)

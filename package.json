@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "concurrently \"npx serve -s build\" \"json-server --watch questions.json --port 3001\"",
+    "start": "json-server --watch questions.json --port 3000",
     "dev": "vite",
     "build": "react-scripts build",
     "lint": "eslint .",
